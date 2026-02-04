@@ -2,7 +2,7 @@
   "id": "imperium-nihilus",
   "title": "Warhammer 40,000 : Imperium Nihilus",
   "description": "A custom tabletop game based on the Warhammer 40K universe.",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "url": "https://github.com/TheXeler/warhammer-imperiumnihilus",
   "manifest": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/system.json",
   "download": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/update.zip",
