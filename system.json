@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "url": "https://github.com/TheXeler/warhammer-imperiumnihilus",
   "manifest": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/system.json",
-  "download": "https://github.com/TheXeler/warhammer-imperiumnihilus/archive/refs/heads/master.zip",
+  "download": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/update.zip",
   "esmodules": [
     "module/main.js"
   ],
