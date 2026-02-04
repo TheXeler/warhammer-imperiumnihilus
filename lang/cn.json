@@ -1,0 +1,120 @@
+{
+  "TYPES": {
+    "Actor": {
+      "Ship": "星舰",
+      "Ships": "星舰",
+      "Character": "角色",
+      "Characters": "角色"
+    },
+    "Item": {
+      "Component": "组件",
+      "Components": "组件",
+      "Planet": "行星",
+      "Planets": "行星",
+      "Building": "建筑物",
+      "Buildings": "建筑物"
+    },
+    "Other": {
+      "Lib": "自动宏库",
+      "Libs": "自动宏库"
+    }
+  },
+  "STARLINK": {
+    "Ship": {
+      "HealthPoints": {
+        "value": {
+          "label": "船体值",
+          "hint": "表示星舰船体解体前还能够承受的伤害值"
+        },
+        "max": {
+          "label": "船体值上限",
+          "hint": "表示星舰船体值的上限"
+        }
+      },
+      "ShieldsPoints": {
+        "value": {
+          "label": "护盾值",
+          "hint": "表示星舰护盾过载前能够承受的伤害值"
+        },
+        "max": {
+          "label": "护盾值上限",
+          "hint": "表示星舰护盾值的上限"
+        }
+      },
+      "Speed": {
+        "label": "速度",
+        "hint": "表示星舰的速度"
+      },
+      "CargoCapacity": {
+        "label": "基础容量",
+        "hint": "表示星舰能够承载的最大货物量"
+      },
+      "ComponentsSlots": {
+        "MaxComponents": {
+          "label": "组件槽上限",
+          "hint": "表示星舰能够安装的最大组件数量"
+        },
+        "UsedComponents": {
+          "label": "已用组件槽",
+          "hint": "表示飞船已经安装的组件数量"
+        }
+      }
+    },
+    "Character": {
+      "HealthPoints": {
+        "label": "生命值",
+        "hint": "表示角色的生命值"
+      },
+      "Strength": {
+        "label": "力量",
+        "hint": "表示角色的力量属性"
+      },
+      "Dexterity": {
+        "label": "灵巧",
+        "hint": "表示角色的灵巧属性"
+      },
+      "Constitution": {
+        "label": "体质",
+        "hint": "表示角色的体质属性"
+      },
+      "Skills": {
+        "label": "技能表",
+        "hint": "角色掌握的技能列表"
+      },
+      "Skill": {
+        "Name": {
+          "label": "技能名称",
+          "hint": "技能的名称"
+        },
+        "Value": {
+          "label": "技能值",
+          "hint": "技能的数值"
+        }
+      },
+      "SkillSlots": {
+        "Max": {
+          "label": "技能槽上限",
+          "hint": "表示角色能够掌握的最大技能数量"
+        },
+        "Used": {
+          "label": "已用技能槽",
+          "hint": "表示角色已经掌握的技能数量"
+        }
+      }
+    },
+    "SheetLabel": {
+      "Ship": "默认星舰表",
+      "Character": "默认角色表",
+      "Component": "默认组件表",
+      "Planet": "默认行星表",
+      "Building": "默认建筑表"
+    },
+    "Terms": {
+      "Ship": "星舰",
+      "Character": "角色",
+      "Component": "组件",
+      "Planet": "行星",
+      "Building": "建筑"
+    }
+  }
+}

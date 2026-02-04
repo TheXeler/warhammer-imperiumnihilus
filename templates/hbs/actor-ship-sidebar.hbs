@@ -1,0 +1,113 @@
+<div class="sidebar">
+
+    {{!-- Ship Card --}}
+    <div class="card">
+
+        {{!-- Collapser --}}
+        <button type="button" class="sidebar-collapser collapser card-tab vertical unbutton always-interactive"
+            {{~#if sidebarCollapsed}} data-tooltip="JOURNAL.ViewExpand" aria-label="{{ localize 'JOURNAL.ViewExpand' }}"
+            {{~else}} data-tooltip="JOURNAL.ViewCollapse" aria-label="{{ localize 'JOURNAL.ViewCollapse' }}"{{/if}}
+                data-action="toggleSidebar">
+            <i class="fas fa-caret-{{#if sidebarCollapsed}}right{{else}}left{{/if}}" inert></i>
+        </button>
+
+        {{!-- Portrait --}}
+        <div class="portrait {{#if portrait.token}}token{{/if}}">
+            {{#if editable}}
+                <label class="slide-toggle roboto-upper">
+                    <input type="checkbox" name="flags.starlink.showTokenPortrait" {{ checked portrait.token }}>
+                    {{#if portrait.token}}
+                        <i class="fas fa-toggle-on" inert></i>
+                        {{ localize "DOCUMENT.Token" }}
+                    {{else}}
+                        <i class="fas fa-toggle-off" inert></i>
+                        {{ localize "STARLINK.Ship.Image" }}
+                    {{/if}}
+                </label>
+            {{/if}}
+
+            {{#with portrait}}
+                {{#if isVideo}}
+                    <video src="{{ src }}" autoplay muted disablepictureinpicture loop playsinline
+                           {{#if @root.editable}}data-action="{{ action }}"{{else}}data-action="showArtwork"{{/if}}
+                        {{#if (and @root.editable path)}}data-edit="{{ path }}" data-type="{{ type }}"{{/if}}></video>
+                {{else}}
+                    <img src="{{ src }}" alt="{{ @root.actor.name }}"
+                         {{#if @root.editable}}data-action="{{ action }}"{{else}}data-action="showArtwork"{{/if}}
+                        {{#if (and @root.editable path)}}data-edit="{{ path }}" data-type="{{ type }}"{{/if}}>
+                {{/if}}
+            {{/with}}
+        </div>
+
+        {{!-- Stats --}}
+        <div class="stats">
+
+            {{!-- Health Points --}}
+            <div class="meter-group">
+                <div class="label roboto-condensed-upper">
+                    <span>{{ localize "STARLINK.Ship.HealthPoints" }}</span>
+                </div>
+                <div class="meter sectioned hit-points">
+                    <div class="progress hit-points" role="meter" aria-valuemin="0" aria-valuenow="{{ hp.value }}"
+                         aria-valuemax="{{ hp.max }}" style="--bar-percentage: {{ hp.pct }}%">
+                        <div class="label">
+                            <span class="value">{{ hp.value }}</span>
+                            <span class="separator">&sol;</span>
+                            <span class="max">{{ hp.max }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- Shield Points --}}
+            <div class="meter-group">
+                <div class="label roboto-condensed-upper">
+                    <span>{{ localize "STARLINK.Ship.Shield" }}</span>
+                </div>
+                <div class="meter sectioned shield-points">
+                    <div class="progress shield-points" role="meter" aria-valuemin="0" aria-valuenow="{{ shield.value }}"
+                         aria-valuemax="{{ shield.max }}" style="--bar-percentage: {{ shield.pct }}%">
+                        <div class="label">
+                            <span class="value">{{ shield.value }}</span>
+                            <span class="separator">&sol;</span>
+                            <span class="max">{{ shield.max }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{!-- Speed & Capacity --}}
+            <div class="lozenges">
+                <div class="lozenge">
+                    <div class="value">{{ speed }}</div>
+                    <div class="label roboto-condensed-upper">{{ localize "STARLINK.Ship.Speed" }}</div>
+                </div>
+
+                <div class="lozenge">
+                    <div class="value">{{ capacity }}</div>
+                    <div class="label roboto-condensed-upper">{{ localize "STARLINK.Ship.CargoCapacity" }}</div>
+                </div>
+            </div>
+
+            {{!-- Component Slots --}}
+            <div class="meter-group">
+                <div class="label roboto-condensed-upper">
+                    <span>{{ localize "STARLINK.Ship.ComponentSlots" }}</span>
+                </div>
+                <div class="meter sectioned component-slots">
+                    <div class="progress component-slots" role="meter" aria-valuemin="0" aria-valuenow="{{ componentSlots.used }}"
+                         aria-valuemax="{{ componentSlots.max }}" style="--bar-percentage: {{ componentSlots.pct }}%">
+                        <div class="label">
+                            <span class="value">{{ componentSlots.used }}</span>
+                            <span class="separator">&sol;</span>
+                            <span class="max">{{ componentSlots.max }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

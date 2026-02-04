@@ -1,0 +1,21 @@
+<header class="sheet-header">
+
+    {{!-- Name --}}
+    <div class="left">
+        {{#if editable}}
+            <input type="text" name="name" class="document-name uninput" value="{{ actor.name }}">
+        {{else}}
+            <div class="document-name">{{ actor.name }}</div>
+        {{/if}}
+    </div>
+
+    {{!-- Docking Button --}}
+    <div class="right">
+        <div class="sheet-header-buttons">
+            <button type="button" class="dock-button gold-button" data-action="dock"
+                    data-tooltip="STARLINK.Ship.Dock" aria-label="STARLINK.Ship.Dock">
+                <i class="fas fa-anchor" inert></i>
+            </button>
+        </div>
+    </div>
+</header>

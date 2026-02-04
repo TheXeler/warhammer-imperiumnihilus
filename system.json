@@ -1,0 +1,84 @@
+{
+  "id": "imperium-nihilus",
+  "title": "Warhammer: Imperium Nihilus",
+  "description": "A custom tabletop game based on the Warhammer 40K universe.",
+  "version": "1.0.0",
+  "url": "https://github.com/TheXeler/warhammer-imperiumnihilus",
+  "manifest": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/system.json",
+  "download": "https://github.com/TheXeler/warhammer-imperiumnihilus/archive/refs/heads/master.zip",
+  "esmodules": [
+    "module/main.js"
+  ],
+  "styles": [
+    "css/style.css"
+  ],
+  "compatibility": {
+    "verified": 14
+  },
+  "authors": [
+    {
+      "name": "TheXeler",
+      "url": "https://github.com/TheXeler"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "Character": {
+        "htmlFields": []
+      },
+      "Unit": {
+        "htmlFields": []
+      }
+    },
+    "Item": {
+      "Weapon": {
+        "htmlFields": []
+      },
+      "Armor": {
+        "htmlFields": []
+      },
+      "Tech": {
+        "htmlFields": []
+      }
+    }
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "zh-cn",
+      "name": "简体中文",
+      "path": "lang/zh-cn.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "characters",
+      "label": "TYPES.Actor.Characters",
+      "type": "Actor",
+      "system": "warhammer-imperiumnihilus"
+    },
+    {
+      "name": "units",
+      "label": "TYPES.Actor.Units",
+      "type": "Actor",
+      "system": "warhammer-imperiumnihilus"
+    },
+    {
+      "name": "weapons",
+      "label": "TYPES.Item.Weapons",
+      "type": "Item",
+      "system": "warhammer-imperiumnihilus"
+    },
+    {
+      "name": "armors",
+      "label": "TYPES.Item.Armors",
+      "type": "Item",
+      "system": "warhammer-imperiumnihilus"
+    }
+  ],
+  "primaryTokenAttribute": "attributes.health"
+}

@@ -1,0 +1,14 @@
+<nav class="tabs" data-group="{{ id }}">
+    {{#each tabs}}
+    <button type="button" class="item {{#if css}}{{ css }}{{/if}}" data-tab="{{ tab }}" data-group="{{ ../id }}"
+            {{#if icon}}data-tooltip="{{ localize label }}"{{/if}}>
+        {{#if icon}}
+        <i class="{{ icon }}" inert></i>
+        {{else if svg}}
+        <svg viewBox="0 0 24 24"><use href="{{ svg }}"></use></svg>
+        {{else}}
+        {{ localize label }}
+        {{/if}}
+    </button>
+    {{/each}}
+</nav>
