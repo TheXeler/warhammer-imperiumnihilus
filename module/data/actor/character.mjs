@@ -24,29 +24,29 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel {
                     initial: 10,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Character.HealthPoints.Label",
-                    hint: "STARLINK.Character.HealthPoints.Hint"
+                    label: "IMPERIUMNIHILUS.Character.HealthPoints.Label",
+                    hint: "IMPERIUMNIHILUS.Character.HealthPoints.Hint"
                 }),
                 strength: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Character.Strength.Label",
-                    hint: "STARLINK.Character.Strength.Hint"
+                    label: "IMPERIUMNIHILUS.Character.Strength.Label",
+                    hint: "IMPERIUMNIHILUS.Character.Strength.Hint"
                 }),
                 dexterity: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Character.Dexterity.Label",
-                    hint: "STARLINK.Character.Dexterity.Hint"
+                    label: "IMPERIUMNIHILUS.Character.Dexterity.Label",
+                    hint: "IMPERIUMNIHILUS.Character.Dexterity.Hint"
                 }),
                 constitution: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Character.Constitution.Label",
-                    hint: "STARLINK.Character.Constitution.Hint"
+                    label: "IMPERIUMNIHILUS.Character.Constitution.Label",
+                    hint: "IMPERIUMNIHILUS.Character.Constitution.Hint"
                 })
             }),
 
@@ -55,20 +55,20 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel {
                 new fields.SchemaField({
                     name: new fields.StringField({
                         initial: "",
-                        label: "STARLINK.Character.Skill.Name.Label",
-                        hint: "STARLINK.Character.Skill.Name.Hint"
+                        label: "IMPERIUMNIHILUS.Character.Skill.Name.Label",
+                        hint: "IMPERIUMNIHILUS.Character.Skill.Name.Hint"
                     }),
                     value: new fields.NumberField({
                         initial: 0,
                         integer: true,
                         min: 0,
-                        label: "STARLINK.Character.Skill.Value.Label",
-                        hint: "STARLINK.Character.Skill.Value.Hint"
+                        label: "IMPERIUMNIHILUS.Character.Skill.Value.Label",
+                        hint: "IMPERIUMNIHILUS.Character.Skill.Value.Hint"
                     })
                 }),
                 {
-                    label: "STARLINK.Character.Skills.Label",
-                    hint: "STARLINK.Character.Skills.Hint"
+                    label: "IMPERIUMNIHILUS.Character.Skills.Label",
+                    hint: "IMPERIUMNIHILUS.Character.Skills.Hint"
                 }
             ),
 
@@ -78,15 +78,15 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel {
                     initial: 3,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Character.SkillSlots.Max.Label",
-                    hint: "STARLINK.Character.SkillSlots.Max.Hint"
+                    label: "IMPERIUMNIHILUS.Character.SkillSlots.Max.Label",
+                    hint: "IMPERIUMNIHILUS.Character.SkillSlots.Max.Hint"
                 }),
                 used: new fields.NumberField({
                     initial: 0,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Character.SkillSlots.Used.Label",
-                    hint: "STARLINK.Character.SkillSlots.Used.Hint"
+                    label: "IMPERIUMNIHILUS.Character.SkillSlots.Used.Label",
+                    hint: "IMPERIUMNIHILUS.Character.SkillSlots.Used.Hint"
                 })
             })
         };

@@ -1,5 +1,5 @@
-export const STARLINK = {};
+export const IMPERIUMNIHILUS = {};
 
 export const CONST = {
-    SYSTEM_ID: "starlink",
+    SYSTEM_ID: "imperiumnihilus",
 }

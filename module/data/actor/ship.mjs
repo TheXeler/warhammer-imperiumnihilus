@@ -25,15 +25,15 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
                         initial: 10,
                         integer: true,
                         min: 0,
-                        label: "STARLINK.Ship.HealthPoints.Value.Label",
-                        hint: "STARLINK.Ship.HealthPoints.Value.Hint"
+                        label: "IMPERIUMNIHILUS.Ship.HealthPoints.Value.Label",
+                        hint: "IMPERIUMNIHILUS.Ship.HealthPoints.Value.Hint"
                     }),
                     max: new NumberField({
                         initial: 10,
                         integer: true,
                         min: 0,
-                        label: "STARLINK.Ship.HealthPoints.Max.Label",
-                        hint: "STARLINK.Ship.HealthPoints.Max.Hint"
+                        label: "IMPERIUMNIHILUS.Ship.HealthPoints.Max.Label",
+                        hint: "IMPERIUMNIHILUS.Ship.HealthPoints.Max.Hint"
                     })
                 }),
                 shield: new SchemaField({
@@ -41,30 +41,30 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
                         initial: 10,
                         integer: true,
                         min: 0,
-                        label: "STARLINK.Ship.Shield.Value.Label",
-                        hint: "STARLINK.Ship.Shield.Value.Hint"
+                        label: "IMPERIUMNIHILUS.Ship.Shield.Value.Label",
+                        hint: "IMPERIUMNIHILUS.Ship.Shield.Value.Hint"
                     }),
                     max: new NumberField({
                         initial: 10,
                         integer: true,
                         min: 0,
-                        label: "STARLINK.Ship.Shield.Max.Label",
-                        hint: "STARLINK.Ship.Shield.Max.Hint"
+                        label: "IMPERIUMNIHILUS.Ship.Shield.Max.Label",
+                        hint: "IMPERIUMNIHILUS.Ship.Shield.Max.Hint"
                     })
                 }),
                 speed: new NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Ship.Speed.Label",
-                    hint: "STARLINK.Ship.Speed.Hint"
+                    label: "IMPERIUMNIHILUS.Ship.Speed.Label",
+                    hint: "IMPERIUMNIHILUS.Ship.Speed.Hint"
                 }),
                 capacity: new NumberField({
                     initial: 20,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Ship.CargoCapacity.Label",
-                    hint: "STARLINK.Ship.CargoCapacity.Hint"
+                    label: "IMPERIUMNIHILUS.Ship.CargoCapacity.Label",
+                    hint: "IMPERIUMNIHILUS.Ship.CargoCapacity.Hint"
                 })
             }),
 
@@ -74,15 +74,15 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
                     initial: 3,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Ship.ComponentSlots.Max.Label",
-                    hint: "STARLINK.Ship.ComponentSlots.Max.Hint"
+                    label: "IMPERIUMNIHILUS.Ship.ComponentSlots.Max.Label",
+                    hint: "IMPERIUMNIHILUS.Ship.ComponentSlots.Max.Hint"
                 }),
                 used: new NumberField({
                     initial: 0,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.Ship.UsedComponents.Label",
-                    hint: "STARLINK.Ship.UsedComponents.Hint"
+                    label: "IMPERIUMNIHILUS.Ship.UsedComponents.Label",
+                    hint: "IMPERIUMNIHILUS.Ship.UsedComponents.Hint"
                 })
             })
         };

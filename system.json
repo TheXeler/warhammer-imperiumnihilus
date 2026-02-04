@@ -7,7 +7,7 @@
   "manifest": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/system.json",
   "download": "https://raw.githubusercontent.com/TheXeler/warhammer-imperiumnihilus/master/update.zip",
   "esmodules": [
-    "module/main.js"
+    "module/main.mjs"
   ],
   "styles": [
     "css/style.css"

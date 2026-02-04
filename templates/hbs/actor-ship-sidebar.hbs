@@ -15,13 +15,13 @@
         <div class="portrait {{#if portrait.token}}token{{/if}}">
             {{#if editable}}
                 <label class="slide-toggle roboto-upper">
-                    <input type="checkbox" name="flags.starlink.showTokenPortrait" {{ checked portrait.token }}>
+                    <input type="checkbox" name="flags.imperiumnihilus.showTokenPortrait" {{ checked portrait.token }}>
                     {{#if portrait.token}}
                         <i class="fas fa-toggle-on" inert></i>
                         {{ localize "DOCUMENT.Token" }}
                     {{else}}
                         <i class="fas fa-toggle-off" inert></i>
-                        {{ localize "STARLINK.Ship.Image" }}
+                        {{ localize "IMPERIUMNIHILUS.Ship.Image" }}
                     {{/if}}
                 </label>
             {{/if}}
@@ -45,7 +45,7 @@
             {{!-- Health Points --}}
             <div class="meter-group">
                 <div class="label roboto-condensed-upper">
-                    <span>{{ localize "STARLINK.Ship.HealthPoints" }}</span>
+                    <span>{{ localize "IMPERIUMNIHILUS.Ship.HealthPoints" }}</span>
                 </div>
                 <div class="meter sectioned hit-points">
                     <div class="progress hit-points" role="meter" aria-valuemin="0" aria-valuenow="{{ hp.value }}"
@@ -62,7 +62,7 @@
             {{!-- Shield Points --}}
             <div class="meter-group">
                 <div class="label roboto-condensed-upper">
-                    <span>{{ localize "STARLINK.Ship.Shield" }}</span>
+                    <span>{{ localize "IMPERIUMNIHILUS.Ship.Shield" }}</span>
                 </div>
                 <div class="meter sectioned shield-points">
                     <div class="progress shield-points" role="meter" aria-valuemin="0" aria-valuenow="{{ shield.value }}"
@@ -80,19 +80,19 @@
             <div class="lozenges">
                 <div class="lozenge">
                     <div class="value">{{ speed }}</div>
-                    <div class="label roboto-condensed-upper">{{ localize "STARLINK.Ship.Speed" }}</div>
+                    <div class="label roboto-condensed-upper">{{ localize "IMPERIUMNIHILUS.Ship.Speed" }}</div>
                 </div>
 
                 <div class="lozenge">
                     <div class="value">{{ capacity }}</div>
-                    <div class="label roboto-condensed-upper">{{ localize "STARLINK.Ship.CargoCapacity" }}</div>
+                    <div class="label roboto-condensed-upper">{{ localize "IMPERIUMNIHILUS.Ship.CargoCapacity" }}</div>
                 </div>
             </div>
 
             {{!-- Component Slots --}}
             <div class="meter-group">
                 <div class="label roboto-condensed-upper">
-                    <span>{{ localize "STARLINK.Ship.ComponentSlots" }}</span>
+                    <span>{{ localize "IMPERIUMNIHILUS.Ship.ComponentSlots" }}</span>
                 </div>
                 <div class="meter sectioned component-slots">
                     <div class="progress component-slots" role="meter" aria-valuemin="0" aria-valuenow="{{ componentSlots.used }}"

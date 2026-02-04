@@ -4,7 +4,7 @@
 export default class ShipActorSheet extends foundry.applications.sheets.ActorSheetV2 {
     /** @override */
     static DEFAULT_OPTIONS = {
-        classes: ["starlink", "ship", "vertical-tabs"],
+        classes: ["imperiumnihilus", "ship", "vertical-tabs"],
         position: {
             width: 800,
             height: 800
@@ -14,45 +14,45 @@ export default class ShipActorSheet extends foundry.applications.sheets.ActorShe
     /** @override */
     static PARTS = {
         header: {
-            template: "systems/starlink/templates/actors/ship-header.hbs"
+            template: "systems/imperiumnihilus/templates/actors/ship-header.hbs"
         },
         sidebar: {
             container: { classes: ["main-content"], id: "main" },
-            template: "systems/starlink/templates/actors/ship-sidebar.hbs"
+            template: "systems/imperiumnihilus/templates/actors/ship-sidebar.hbs"
         },
         details: {
             classes: ["col-2"],
             container: { classes: ["tab-body"], id: "tabs" },
-            template: "systems/starlink/templates/actors/tabs/ship-details.hbs",
+            template: "systems/imperiumnihilus/templates/actors/tabs/ship-details.hbs",
             scrollable: [""]
         },
         cargo: {
             container: { classes: ["tab-body"], id: "tabs" },
-            template: "systems/starlink/templates/actors/tabs/ship-cargo.hbs",
+            template: "systems/imperiumnihilus/templates/actors/tabs/ship-cargo.hbs",
             templates: [
-                "systems/starlink/templates/inventory/inventory.hbs"
+                "systems/imperiumnihilus/templates/inventory/inventory.hbs"
             ],
             scrollable: [""]
         },
         components: {
             container: { classes: ["tab-body"], id: "tabs" },
-            template: "systems/starlink/templates/actors/tabs/ship-components.hbs",
+            template: "systems/imperiumnihilus/templates/actors/tabs/ship-components.hbs",
             scrollable: [""]
         },
         tabs: {
             id: "tabs",
             classes: ["tabs-right"],
-            template: "systems/starlink/templates/shared/sidebar-tabs.hbs"
+            template: "systems/imperiumnihilus/templates/shared/sidebar-tabs.hbs"
         }
     };
 
     /** @override */
     static TABS = [
-        { tab: "details", label: "STARLINK.Ship.Details", icon: "fas fa-cog" },
-        { tab: "cargo", label: "STARLINK.Ship.Cargo", icon: "fas fa-boxes" },
-        { tab: "components", label: "STARLINK.Ship.Components", icon: "fas fa-microchip" },
-        { tab: "crew", label: "STARLINK.Ship.Crew", icon: "fas fa-users" },
-        { tab: "biography", label: "STARLINK.Ship.Biography", icon: "fas fa-book" }
+        { tab: "details", label: "IMPERIUMNIHILUS.Ship.Details", icon: "fas fa-cog" },
+        { tab: "cargo", label: "IMPERIUMNIHILUS.Ship.Cargo", icon: "fas fa-boxes" },
+        { tab: "components", label: "IMPERIUMNIHILUS.Ship.Components", icon: "fas fa-microchip" },
+        { tab: "crew", label: "IMPERIUMNIHILUS.Ship.Crew", icon: "fas fa-users" },
+        { tab: "biography", label: "IMPERIUMNIHILUS.Ship.Biography", icon: "fas fa-book" }
     ];
 
     /** @override */
@@ -160,8 +160,8 @@ export default class ShipActorSheet extends foundry.applications.sheets.ActorShe
     async _prepareCargoContext(context, options) {
         context = await super._prepareInventoryContext(context, options);
         context.size = {
-            label: game.i18n.localize("STARLINK.Ship.CargoCapacity.Label"),
-            abbr: game.i18n.localize("STARLINK.Ship.Cargo"),
+            label: game.i18n.localize("IMPERIUMNIHILUS.Ship.CargoCapacity.Label"),
+            abbr: game.i18n.localize("IMPERIUMNIHILUS.Ship.Cargo"),
             mod: 1
         };
         return context;
@@ -205,7 +205,7 @@ export default class ShipActorSheet extends foundry.applications.sheets.ActorShe
             secrets: this.actor.isOwner, relativeTo: this.actor
         };
         context.enriched = {
-            label: "STARLINK.Ship.Biography",
+            label: "IMPERIUMNIHILUS.Ship.Biography",
             value: await TextEditor.enrichHTML(this.actor.system.biography?.value || "", enrichmentOptions)
         };
         return context;

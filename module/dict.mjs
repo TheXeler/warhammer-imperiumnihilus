@@ -1,32 +1,32 @@
 export default {
     "Ship": {
         "Simple": "Ship",
-        "Complex": "starlink.Ship",
-        "I18nSimpleLabel": "STARLINK.TYPES.Actor.Ship",
-        "I18nComplexLabel": "STARLINK.TYPES.Actor.Ships"
+        "Complex": "imperiumnihilus.Ship",
+        "I18nSimpleLabel": "IMPERIUMNIHILUS.TYPES.Actor.Ship",
+        "I18nComplexLabel": "IMPERIUMNIHILUS.TYPES.Actor.Ships"
     },
     "Character": {
         "Simple": "Character",
-        "Complex": "starlink.Character",
-        "I18nSimpleLabel": "STARLINK.TYPES.Actor.Character",
-        "I18nComplexLabel": "STARLINK.TYPES.Actor.Characters"
+        "Complex": "imperiumnihilus.Character",
+        "I18nSimpleLabel": "IMPERIUMNIHILUS.TYPES.Actor.Character",
+        "I18nComplexLabel": "IMPERIUMNIHILUS.TYPES.Actor.Characters"
     },
     "Component": {
         "simple": "Component",
-        "complex": "starlink.Component",
-        "I18nSimpleLabel": "STARLINK.TYPES.Item.Component",
-        "I18nComplexLabel": "STARLINK.TYPES.Item.Components"
+        "complex": "imperiumnihilus.Component",
+        "I18nSimpleLabel": "IMPERIUMNIHILUS.TYPES.Item.Component",
+        "I18nComplexLabel": "IMPERIUMNIHILUS.TYPES.Item.Components"
     },
     "Planet": {
         "simple": "Planet",
-        "complex": "starlink.Planet",
-        "I18nSimpleLabel": "STARLINK.TYPES.Item.Planet",
-        "I18nComplexLabel": "STARLINK.TYPES.Item.Planets"
+        "complex": "imperiumnihilus.Planet",
+        "I18nSimpleLabel": "IMPERIUMNIHILUS.TYPES.Item.Planet",
+        "I18nComplexLabel": "IMPERIUMNIHILUS.TYPES.Item.Planets"
     },
     "Building": {
         "simple": "Building",
-        "complex": "starlink.Building",
-        "I18nSimpleLabel": "STARLINK.TYPES.Item.Building",
-        "I18nComplexLabel": "STARLINK.TYPES.Item.Buildings"
+        "complex": "imperiumnihilus.Building",
+        "I18nSimpleLabel": "IMPERIUMNIHILUS.TYPES.Item.Building",
+        "I18nComplexLabel": "IMPERIUMNIHILUS.TYPES.Item.Buildings"
     }
 }

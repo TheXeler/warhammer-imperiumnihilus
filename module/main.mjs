@@ -1,4 +1,4 @@
-import {STARLINK, CONST} from "./config.mjs"
+import {IMPERIUMNIHILUS, CONST} from "./config.mjs"
 
 //import * as sheets from "./sheet/module.mjs"
 import * as dataModels from "./data/module.mjs"
@@ -6,16 +6,16 @@ import * as dataModels from "./data/module.mjs"
 import {log} from "./utils.mjs";
 import * as sheets from "./automatic/auto-sheets.mjs";
 
-globalThis.starlink = {
-    config: STARLINK,
+globalThis.imperiumnihilus = {
+    config: IMPERIUMNIHILUS,
     dataModels: dataModels,
     //documents: documents
 }
 
 Hooks.once("init", function () {
-    globalThis.starlink = game.starlink = Object.assign(game.system, globalThis.starlink);
+    globalThis.imperiumnihilus = game.imperiumnihilus = Object.assign(game.system, globalThis.imperiumnihilus);
 
-    CONFIG.STARLINK = STARLINK;
+    CONFIG.IMPERIUMNIHILUS = IMPERIUMNIHILUS;
 
     log("Data assign...")
     Object.assign(CONFIG.Actor.dataModels, dataModels.actor);
@@ -30,12 +30,12 @@ Hooks.once("init", function () {
         sheet: sheets.Ship,
         types: ["Ship"],
         makeDefault: true,
-        label: "STARLINK.SheetLabel.Ship"
+        label: "IMPERIUMNIHILUS.SheetLabel.Ship"
     }, {
         sheet: sheets.Character,
         types: ["Character"],
         makeDefault: true,
-        label: "STARLINK.SheetLabel.Character"
+        label: "IMPERIUMNIHILUS.SheetLabel.Character"
     }]).forEach(sheetInfo => {
         Actors.registerSheet(CONST.SYSTEM_ID, sheetInfo.class, sheetInfo.config)
     });

@@ -62,7 +62,7 @@ export default class AutoSheetConverter {
                 if (!section) {
                     section = {
                         name: sectionName,
-                        label: game.i18n.localize(`STARLINK.Sheet.Section.${sectionName.titleCase()}`) || sectionName.titleCase(),
+                        label: game.i18n.localize(`IMPERIUMNIHILUS.Sheet.Section.${sectionName.titleCase()}`) || sectionName.titleCase(),
                         fields: []
                     };
                     config.sections.push(section);
