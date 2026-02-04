@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ZIP_FILE="warhammer-imperiumnihilus.zip"
+ZIP_FILE="update.zip"
 
 TEMP_DIR=$(mktemp -d)
 cp -r ./* "$TEMP_DIR/"

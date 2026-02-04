@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set ZIP_FILE=warhammer-imperiumnihilus.zip
+set ZIP_FILE=update.zip
 
 set TEMP_DIR=%TEMP%\warhammer_temp
 mkdir "%TEMP_DIR%"
