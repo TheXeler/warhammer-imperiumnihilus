@@ -10,7 +10,7 @@
     "module/main.mjs"
   ],
   "styles": [
-    "styles/style.css"
+    "style/style.css"
   ],
   "compatibility": {
     "verified": 14

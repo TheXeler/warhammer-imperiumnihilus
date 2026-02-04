@@ -14,35 +14,35 @@ export default class ShipActorSheet extends foundry.applications.sheets.ActorShe
     /** @override */
     static PARTS = {
         header: {
-            template: "systems/imperiumnihilus/templates/actors/ship-header.hbs"
+            template: "systems/imperiumnihilus/template/actors/ship-header.hbs"
         },
         sidebar: {
             container: { classes: ["main-content"], id: "main" },
-            template: "systems/imperiumnihilus/templates/actors/ship-sidebar.hbs"
+            template: "systems/imperiumnihilus/template/actors/ship-sidebar.hbs"
         },
         details: {
             classes: ["col-2"],
             container: { classes: ["tab-body"], id: "tabs" },
-            template: "systems/imperiumnihilus/templates/actors/tabs/ship-details.hbs",
+            template: "systems/imperiumnihilus/template/actors/tabs/ship-details.hbs",
             scrollable: [""]
         },
         cargo: {
             container: { classes: ["tab-body"], id: "tabs" },
-            template: "systems/imperiumnihilus/templates/actors/tabs/ship-cargo.hbs",
+            template: "systems/imperiumnihilus/template/actors/tabs/ship-cargo.hbs",
             templates: [
-                "systems/imperiumnihilus/templates/inventory/inventory.hbs"
+                "systems/imperiumnihilus/template/inventory/inventory.hbs"
             ],
             scrollable: [""]
         },
         components: {
             container: { classes: ["tab-body"], id: "tabs" },
-            template: "systems/imperiumnihilus/templates/actors/tabs/ship-components.hbs",
+            template: "systems/imperiumnihilus/template/actors/tabs/ship-components.hbs",
             scrollable: [""]
         },
         tabs: {
             id: "tabs",
             classes: ["tabs-right"],
-            template: "systems/imperiumnihilus/templates/shared/sidebar-tabs.hbs"
+            template: "systems/imperiumnihilus/template/shared/sidebar-tabs.hbs"
         }
     };
 
